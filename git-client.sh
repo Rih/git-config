@@ -5,7 +5,7 @@
 #$serverUser="git"
 #$serverProject="project-example"
 #$newProject="project"
-
+echo "nothin interesting"
 echo "Please let me know your computers username: "
 read clientUser
 echo "Please let me know your Projects name: "
@@ -24,6 +24,7 @@ $clientPath="/home/${clientUser}"
 ## On Client
 echo "Creating a new client SSH KEY..."
 ssh-keygen -t rsa
+echo "nothin interesting"
 
 echo "Sending public key to Remote Git Server and adding to authorizeds..."
 cat ${clientPath}/.ssh/id_rsa.pub | ssh ${serverUser}@${serverIP} "mkdir -p ${serverPath}/.ssh && cat >> ${serverPath}/.ssh/authorized_keys"
@@ -31,6 +32,7 @@ cat ${clientPath}/.ssh/id_rsa.pub | ssh ${serverUser}@${serverIP} "mkdir -p ${se
 # On Client
 echo "Creating a new project path..."
 mkdir -p ~/projects
+echo "nothin interesting"
 
 cd ~/projects
 
