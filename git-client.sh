@@ -1,10 +1,22 @@
 !#/bin/bash
 
-$serverIP="192.168.11.11"
-$clientUser="clientName"
-$serverUser="git"
-$serverProject="project-example"
-$newProject="project"
+#$serverIP="192.168.11.11"
+#$clientUser="clientName"
+#$serverUser="git"
+#$serverProject="project-example"
+#$newProject="project"
+
+echo "Please let me know your computers username: "
+read clientUser
+echo "Please let me know your Projects name: "
+read newProject
+echo "Please let me know your remote computers username (Default=git): "
+read serverUser
+echo "Please let me know your remote computers IP: "
+read serverIP
+echo "Please let me know your remote Projects name: "
+read serverProject
+
 $serverPath="/home/${serverUser}"
 $serverProjectPath="${serverPath}/projects"
 $clientPath="/home/${clientUser}"
@@ -22,12 +34,12 @@ mkdir -p ~/projects
 
 cd ~/projects
 
-# DO ONE OF TWO
-#git init 
-#git add .
-#git commit -m "first"
-# After this, DO remote add
-#Otherwise DO :Clone:
+## DO ONE OF TWO
+##git init 
+##git add .
+##git commit -m "first"
+## After this, DO remote add
+##Otherwise DO :Clone:
 
 #-------
 # :Clone:

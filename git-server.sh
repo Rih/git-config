@@ -1,9 +1,17 @@
 !#/bin/bash
 
-$serverIP="192.168.11.11"
-$serverUser="git"
-$newProject="project-example"
-$serverPath="/home/${serverUser}"
+#$serverIP="192.168.11.11"
+#$serverUser="git"
+#$newProject="project-example"
+#$serverPath="/home/${serverUser}"
+
+echo "Please let me know your remote computers username (Default=git): "
+read serverUser
+echo "Please let me know your remote computers IP: "
+read serverIP
+echo "Please let me know your remote Projects name: "
+read newProject
+
 ## On Server
 # Run once
 # sudo apt-get update
