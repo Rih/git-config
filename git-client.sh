@@ -1,5 +1,5 @@
 !#/bin/bash
-
+#Uncoment here if you dont want prompt variables
 #$serverIP="192.168.11.11"
 #$clientUser="clientName"
 #$serverUser="git"
